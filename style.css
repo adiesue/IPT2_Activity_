@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +23,7 @@ body {
     padding: 0 20px;
 }
 
-/* Navigation */
+
 .navbar {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
@@ -130,7 +130,7 @@ body {
     width: 100%;
 }
 
-/* Hero Section */
+
 .hero {
     height: 100vh;
     display: flex;
@@ -373,7 +373,7 @@ body {
     font-size: 1.2rem;
 }
 
-/* Sections */
+
 .section {
     padding: 100px 0;
     position: relative;
@@ -417,7 +417,7 @@ body {
     background: linear-gradient(180deg, #f8f9fa 0%, #f0f4f8 100%);
 }
 
-/* Cards */
+
 .card {
     background: white;
     border-radius: 20px;
@@ -466,7 +466,7 @@ body {
     }
 }
 
-/* About Section */
+
 .about-content p {
     font-size: 1.1rem;
     line-height: 1.8;
@@ -509,7 +509,7 @@ body {
     margin-bottom: 8px;
 }
 
-/* Skills Section */
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -568,7 +568,7 @@ body {
     transform: translateX(5px);
 }
 
-/* Projects Section */
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
@@ -630,7 +630,7 @@ body {
     box-shadow: 0 6px 20px rgba(74, 144, 226, 0.4);
 }
 
-/* Reflection Section */
+
 .reflection-content {
     display: grid;
     gap: 25px;
@@ -668,7 +668,7 @@ body {
     margin-bottom: 8px;
 }
 
-/* Footer */
+
 .footer {
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
     color: white;
@@ -713,7 +713,7 @@ body {
     50% { transform: scale(1.2); }
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .hamburger {
         display: flex;

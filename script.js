@@ -1,4 +1,4 @@
-// Mobile Navigation Toggle
+
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 const navbar = document.querySelector('.navbar');
@@ -8,7 +8,7 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
 });
 
-// Close mobile menu when clicking on a link
+
 document.querySelectorAll('.nav-menu a').forEach(link => {
     link.addEventListener('click', () => {
         navMenu.classList.remove('active');
@@ -16,7 +16,7 @@ document.querySelectorAll('.nav-menu a').forEach(link => {
     });
 });
 
-// Navbar scroll effect
+
 let lastScroll = 0;
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
@@ -30,7 +30,6 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
-// Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -44,7 +43,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Add active class to navigation items on scroll
+
 window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.nav-menu a');
@@ -67,7 +66,7 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Add animation to elements when they come into view
+
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -85,7 +84,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe all cards with staggered animation
+
 document.querySelectorAll('.card').forEach((el, index) => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
@@ -93,7 +92,7 @@ document.querySelectorAll('.card').forEach((el, index) => {
     observer.observe(el);
 });
 
-// Scroll indicator click handler
+
 const scrollIndicator = document.querySelector('.scroll-indicator');
 if (scrollIndicator) {
     scrollIndicator.addEventListener('click', () => {
@@ -108,7 +107,7 @@ if (scrollIndicator) {
     scrollIndicator.style.cursor = 'pointer';
 }
 
-// Add subtle animations to hero section
+
 document.addEventListener('DOMContentLoaded', () => {
     const heroContent = document.querySelector('.hero-content');
     if (heroContent) {
@@ -122,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 300);
     }
     
-    // Add parallax effect to hero shapes
+    
     const shapes = document.querySelectorAll('.shape');
     window.addEventListener('scroll', () => {
         const scrolled = window.pageYOffset;
@@ -132,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
-    // Add hover effect to social links
+   
     const socialLinks = document.querySelectorAll('.social-link');
     socialLinks.forEach(link => {
         link.addEventListener('mouseenter', function() {
@@ -143,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
-    // Add typing effect to hero title (optional enhancement)
+   
     const heroTitle = document.querySelector('.hero-title');
     if (heroTitle) {
         const titleLines = heroTitle.querySelectorAll('.title-line');
